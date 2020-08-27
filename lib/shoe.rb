@@ -6,21 +6,13 @@ class Shoe
   def brand=(brand)
     @brand = brand
     BRANDS << @brand
-    brand.unque!
+    BRANDS.unque!
   end
-  
-  def brand
-    @brand
-  end 
 
   def cobble
     self.condition = "new"
     puts "Your shoe is as good as new!"
   end
   
-  def brand=(brand)
-    @brand = brand
-    
-  end 
 
 end
